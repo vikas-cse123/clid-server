@@ -1,3 +1,4 @@
+//vivek email used for mogngodb
 import express from "express";
 import Data from "./data.js"
 import { connectDb } from "./db.js";
@@ -9,7 +10,7 @@ const app = express();
 const PORT = 4000;
 const WACRM_WEBHOOK_SECRET = process.env.WACRM_WEBHOOK_SECRET
 await connectDb();
-app.use('/webhooks/wacrm', express.raw({ type: 'application/json' }));
+app.use('/webhooks/flow', express.raw({ type: 'application/json' }));
 app.use('/whatsapp/webhook', express.json());
 
 app.use((req, res, next) => {
@@ -48,6 +49,8 @@ app.get("/health", (req, res) => {
     timestamp: new Date().toISOString(),
   });
 });
+
+
 app.post("/whatsapp/webhook", async (req, res) => {
   res.status(200).json({ message: "received" });
 
@@ -135,7 +138,10 @@ async function sendLeadEventToMeta(ctwaClid) {
     console.log("Meta CAPI Lead event sent for", ctwaClid);
   }
 }
-app.post('/webhooks/wacrm', async (req, res) => {
+
+
+
+app.post('/webhooks/flow', async (req, res) => {
   console.log(req.body.toString('utf8'));
   const signature = req.headers['x-wacrm-signature'];
 
