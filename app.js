@@ -235,6 +235,7 @@ app.post('/webhooks/flow', async (req, res) => {
     const customerPhone = event?.customer?.phone_number;
     if (customerPhone) {
       const record = await Data.findOne({ customerPhoneNumber: customerPhone });
+      console.log({record});
       if (record?.ctwaClid) {
         if (record.isClidSend) {
           console.log("clid already sent to Meta, skipping", record.ctwaClid);
