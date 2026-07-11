@@ -13,7 +13,7 @@ await connectDb();
 app.use('/webhooks/flow', express.raw({ type: 'application/json' }));
 app.use('/whatsapp/webhook', express.json());
 
-// EAAd0fc2AKMQBRyNZAOe2hZC9jZCxbaqTepZCJAheosUPQKhMIZAwaJI2ZBHaMerYM9XhZAWZAMubeArpTMSgw2JX1iManVsvRn5jlWZB2IjokaXIK4kHGZAjVJi1lqF1Ypr4u6ZB3B3VC26YQbNA9ZCotunPZAKl1qMApZCx7CdLOKayJPFRbPwtFRpgjbHHziYdJPhgZCRNgZDZD
+
 
 app.use((req, res, next) => {
   console.log(`${new Date().toLocaleString()} ${req.method} ${req.originalUrl}`);
@@ -103,8 +103,8 @@ const verifySignature = (rawBody, signature, secret) => {
   return signature === expected;
 };
 const META_API_VERSION = "v21.0";
-const META_DATASET_ID = process.env.META_DATASET_ID; // from Events Manager
-const META_ACCESS_TOKEN = process.env.META_CAPI_ACCESS_TOKEN;
+const META_DATASET_ID = 1511299484126649
+const META_ACCESS_TOKEN = "EAAd0fc2AKMQBRyNZAOe2hZC9jZCxbaqTepZCJAheosUPQKhMIZAwaJI2ZBHaMerYM9XhZAWZAMubeArpTMSgw2JX1iManVsvRn5jlWZB2IjokaXIK4kHGZAjVJi1lqF1Ypr4u6ZB3B3VC26YQbNA9ZCotunPZAKl1qMApZCx7CdLOKayJPFRbPwtFRpgjbHHziYdJPhgZCRNgZDZD";
 
 async function sendLeadEventToMeta(ctwaClid) {
   if (!ctwaClid) return;
