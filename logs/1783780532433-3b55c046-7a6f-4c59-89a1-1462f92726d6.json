@@ -1,0 +1,41 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1042625644965148",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "918604044556",
+              "phone_number_id": "1237170136146543"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Dipanshu 🪐"
+                },
+                "wa_id": "919140245269",
+                "user_id": "IN.1192531393028359"
+              }
+            ],
+            "messages": [
+              {
+                "from": "919140245269",
+                "from_user_id": "IN.1192531393028359",
+                "id": "wamid.HBgMOTE5MTQwMjQ1MjY5FQIAEhggQUM2RDc1MEY4RUY3RTgyNjQ2ODZERTlFMjdEQzM1MzgA",
+                "timestamp": "1783780530",
+                "text": {
+                  "body": "Dipanshu Yogi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

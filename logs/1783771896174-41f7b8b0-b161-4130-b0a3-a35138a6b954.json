@@ -1,0 +1,11 @@
+{
+  "id": "7d8f2571-c6a5-4542-a8d7-38d92dc2e18d",
+  "event": "message.status_updated",
+  "occurred_at": "2026-07-07T15:59:45.758Z",
+  "account_id": "c3bf3ba7-de01-4c9c-a0a8-f6dcba265ff2",
+  "data": {
+    "whatsapp_message_id": "wamid.HBgMOTE5MTk4MDgwODY0FQIAERgSN0QwNjBDRUZGMTcxMUI5NjM1AA==",
+    "conversation_id": "20210d8e-e1a0-4e13-a37e-71393d39bd8c",
+    "status": "delivered"
+  }
+}

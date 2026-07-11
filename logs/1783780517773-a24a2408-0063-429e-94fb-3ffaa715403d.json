@@ -1,0 +1,54 @@
+{
+  "id": "1fca28d7-7461-4464-80be-6144b9804a6e",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:35:17.768Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "3ab0e2b4-75fe-4b12-b7a6-8fb9ec86f3f1",
+    "contact_id": "6f9acc00-fe41-4164-8bf5-297740cdd6a5",
+    "whatsapp_message_id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUM4MzRCRDYzNDk1QUM3RDEzNjc3MjA3NjA5NDJGNjcA",
+    "content_type": "text",
+    "text": "Dikshant mhera",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Dixu"
+                    },
+                    "wa_id": "917015773468",
+                    "user_id": "IN.1349971736503641"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "917015773468",
+                    "from_user_id": "IN.1349971736503641",
+                    "id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUM4MzRCRDYzNDk1QUM3RDEzNjc3MjA3NjA5NDJGNjcA",
+                    "timestamp": "1783780509",
+                    "text": {
+                      "body": "Dikshant mhera"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

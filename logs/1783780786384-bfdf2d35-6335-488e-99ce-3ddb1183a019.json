@@ -1,0 +1,54 @@
+{
+  "id": "cb6df3b6-1d4d-4991-8c8c-57eda27a5be6",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:39:46.379Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "a51dcdf1-9595-4e27-8186-41978cc69c8a",
+    "contact_id": "accddc1d-a39d-42cc-8985-94999e404516",
+    "whatsapp_message_id": "wamid.HBgMOTE5MzE1MDA5ODA5FQIAEhggQUNEQkI4RkE2OUVDMDEyN0JFQTA2MjIyMDdDNzU5NzcA",
+    "content_type": "text",
+    "text": "Delhi",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Sarthak Chauhan"
+                    },
+                    "wa_id": "919315009809",
+                    "user_id": "IN.1303422898236768"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "919315009809",
+                    "from_user_id": "IN.1303422898236768",
+                    "id": "wamid.HBgMOTE5MzE1MDA5ODA5FQIAEhggQUNEQkI4RkE2OUVDMDEyN0JFQTA2MjIyMDdDNzU5NzcA",
+                    "timestamp": "1783780779",
+                    "text": {
+                      "body": "Delhi"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

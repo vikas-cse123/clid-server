@@ -1,0 +1,54 @@
+{
+  "id": "8470a449-37b8-422c-8666-6891991696f6",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:41:25.297Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "a51dcdf1-9595-4e27-8186-41978cc69c8a",
+    "contact_id": "accddc1d-a39d-42cc-8985-94999e404516",
+    "whatsapp_message_id": "wamid.HBgMOTE5MzE1MDA5ODA5FQIAEhggQUM4NDc2QzA3Q0Y3NEUwNjQ2M0ZEQkI0MTZFRkZDMzgA",
+    "content_type": "text",
+    "text": "This is the project I shared to my client today..",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Sarthak Chauhan"
+                    },
+                    "wa_id": "919315009809",
+                    "user_id": "IN.1303422898236768"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "919315009809",
+                    "from_user_id": "IN.1303422898236768",
+                    "id": "wamid.HBgMOTE5MzE1MDA5ODA5FQIAEhggQUM4NDc2QzA3Q0Y3NEUwNjQ2M0ZEQkI0MTZFRkZDMzgA",
+                    "timestamp": "1783780881",
+                    "text": {
+                      "body": "This is the project I shared to my client today.."
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

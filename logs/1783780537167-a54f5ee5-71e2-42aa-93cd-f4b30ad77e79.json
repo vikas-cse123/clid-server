@@ -1,0 +1,54 @@
+{
+  "id": "663de1de-edff-4e09-83b8-bf58855d162e",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:35:37.162Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "cf602ae8-a7c5-421e-b030-a516fadbb857",
+    "contact_id": "8203ff24-c38f-4004-8b4c-f2b9e5e09fed",
+    "whatsapp_message_id": "wamid.HBgMOTE5MTQwMjQ1MjY5FQIAEhggQUM2RDc1MEY4RUY3RTgyNjQ2ODZERTlFMjdEQzM1MzgA",
+    "content_type": "text",
+    "text": "Dipanshu Yogi",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Dipanshu 🪐"
+                    },
+                    "wa_id": "919140245269",
+                    "user_id": "IN.1192531393028359"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "919140245269",
+                    "from_user_id": "IN.1192531393028359",
+                    "id": "wamid.HBgMOTE5MTQwMjQ1MjY5FQIAEhggQUM2RDc1MEY4RUY3RTgyNjQ2ODZERTlFMjdEQzM1MzgA",
+                    "timestamp": "1783780530",
+                    "text": {
+                      "body": "Dipanshu Yogi"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

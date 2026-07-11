@@ -1,0 +1,47 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1042625644965148",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "918604044556",
+              "phone_number_id": "1237170136146543"
+            },
+            "contacts": [
+              {
+                "wa_id": "919186352097",
+                "user_id": "IN.2494363877657863"
+              }
+            ],
+            "statuses": [
+              {
+                "id": "wamid.HBgMOTE5MTg2MzUyMDk3FQIAERgSODU2MDc0MTY4MzcyRkVBRUFBAA==",
+                "status": "read",
+                "timestamp": "1783780632",
+                "recipient_id": "919186352097",
+                "recipient_user_id": "IN.2494363877657863",
+                "conversation": {
+                  "id": "a8c8119866fc2d2c51a481634db3b031",
+                  "origin": {
+                    "type": "referral_conversion"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "referral_conversion",
+                  "type": "free_entry_point"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

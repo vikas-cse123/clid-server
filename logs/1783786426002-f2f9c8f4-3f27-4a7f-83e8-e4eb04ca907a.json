@@ -1,0 +1,49 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1042625644965148",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "918604044556",
+              "phone_number_id": "1237170136146543"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Satyabrata Kanungo"
+                },
+                "wa_id": "916371362121",
+                "user_id": "IN.1037052972143184"
+              }
+            ],
+            "messages": [
+              {
+                "context": {
+                  "from": "918604044556",
+                  "id": "wamid.HBgMOTE2MzcxMzYyMTIxFQIAERgSQURCRThBRjkyQTFCOURFMkVGAA=="
+                },
+                "from": "916371362121",
+                "from_user_id": "IN.1037052972143184",
+                "id": "wamid.HBgMOTE2MzcxMzYyMTIxFQIAEhggQUNBRUY0OEYwQUMxQzZDRjk4NkIxRUM5RjUyNzI4Q0MA",
+                "timestamp": "1783786424",
+                "type": "interactive",
+                "interactive": {
+                  "type": "button_reply",
+                  "button_reply": {
+                    "id": "yes",
+                    "title": "Immediately"
+                  }
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

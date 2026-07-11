@@ -1,0 +1,62 @@
+{
+  "id": "9608c5f7-85de-4d08-85b2-97dea3ee1454",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:34:49.635Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "106e925e-c50a-4332-b811-21e61696a57b",
+    "contact_id": "3db54020-3a3c-4449-aa7a-1e82a3b60865",
+    "whatsapp_message_id": "wamid.HBgMOTE5NDExNTQ3MTQ1FQIAEhggQUMzODFFOEU4QTE5ODM0MUJCQzlCN0JGMDNGQTU2MjkA",
+    "content_type": "interactive",
+    "text": "1-2 years",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Mikey"
+                    },
+                    "wa_id": "919411547145",
+                    "user_id": "IN.2139322970126786"
+                  }
+                ],
+                "messages": [
+                  {
+                    "context": {
+                      "from": "918604044556",
+                      "id": "wamid.HBgMOTE5NDExNTQ3MTQ1FQIAERgSRkY4MUE5RTQ1NDQxNzhCRTZCAA=="
+                    },
+                    "from": "919411547145",
+                    "from_user_id": "IN.2139322970126786",
+                    "id": "wamid.HBgMOTE5NDExNTQ3MTQ1FQIAEhggQUMzODFFOEU4QTE5ODM0MUJCQzlCN0JGMDNGQTU2MjkA",
+                    "timestamp": "1783780483",
+                    "type": "interactive",
+                    "interactive": {
+                      "type": "button_reply",
+                      "button_reply": {
+                        "id": "btn_3",
+                        "title": "1-2 years"
+                      }
+                    }
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1042625644965148",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "918604044556",
+              "phone_number_id": "1237170136146543"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Dixu"
+                },
+                "wa_id": "917015773468",
+                "user_id": "IN.1349971736503641"
+              }
+            ],
+            "messages": [
+              {
+                "context": {
+                  "forwarded": true
+                },
+                "from": "917015773468",
+                "from_user_id": "IN.1349971736503641",
+                "id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUM5MkEzQkNBNTYyMEM0MjRGMURGQzAzNjNGQkE1NUEA",
+                "timestamp": "1783780574",
+                "text": {
+                  "body": "Hi,\n\nGreetings from Brightlight Production.\n\nWe’re sharing our Cinematography & Color Grading Showreel.\n\nAt Brightlight Production, we specialize in cinematic visuals for feature films, music videos, commercials, and digital content. Our team provides professional cinematography and color grading services using a fully equipped Blackmagic Cinema Camera 6K Full Frame cinema rig, ready for feature film and commercial productions.\n\nWe would love the opportunity to collaborate on your upcoming projects.\n\nShowreel:\nhttps://youtu.be/twBIIFxX7HE?si=Euq_IxRF8YxW3FuR\n\nWe look forward to connecting with you.\n\nBest regards,\n\nYawan Kaushik\nManager\nBrightlight Production"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

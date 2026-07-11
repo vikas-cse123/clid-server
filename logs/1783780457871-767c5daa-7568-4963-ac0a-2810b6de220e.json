@@ -1,0 +1,54 @@
+{
+  "id": "930d517f-6ad2-40f5-ae95-01f08b09d477",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:34:17.866Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "106e925e-c50a-4332-b811-21e61696a57b",
+    "contact_id": "3db54020-3a3c-4449-aa7a-1e82a3b60865",
+    "whatsapp_message_id": "wamid.HBgMOTE5NDExNTQ3MTQ1FQIAEhggQUNENTgxNzIyNDUxMUNCOUUxNjA5QkJCNEFEMzZFQkEA",
+    "content_type": "text",
+    "text": "Haldwani",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Mikey"
+                    },
+                    "wa_id": "919411547145",
+                    "user_id": "IN.2139322970126786"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "919411547145",
+                    "from_user_id": "IN.2139322970126786",
+                    "id": "wamid.HBgMOTE5NDExNTQ3MTQ1FQIAEhggQUNENTgxNzIyNDUxMUNCOUUxNjA5QkJCNEFEMzZFQkEA",
+                    "timestamp": "1783780450",
+                    "text": {
+                      "body": "Haldwani"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

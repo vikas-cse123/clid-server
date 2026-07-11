@@ -1,0 +1,54 @@
+{
+  "id": "0efb22a3-69cf-475c-8b76-b2266986cd5c",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:48:58.880Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "a9a048ca-c12c-425c-8081-47227e91464c",
+    "contact_id": "f8ae173b-35e9-407b-90d5-a48302c36cf6",
+    "whatsapp_message_id": "wamid.HBgMOTE5NTg4Nzc5OTc0FQIAEhggQTUwNkVCRkIxRUE4NEM0N0U3MTA2MjEwNDI0MzNBOEMA",
+    "content_type": "text",
+    "text": "Hi 👋\n\n\nI'm a Professional Video Editor & Thumbnail Designer. I can help you create engaging YouTube videos, Shorts, Reels, travel vlogs, challenge videos, and social media content.\n\n🎬 My Services:\n• Professional Video Editing\n• YouTube Shorts & Reels Editing\n• Motion Graphics\n• Sound Effects & Music Sync\n• Color Correction/Grading\n• High CTR Thumbnail Design\n\n\nPlease share:\n\n1. Your video footage\n2. Reference video (if any)\n3. Editing style you want\n4. Deadline\n\nPortfolio:- https://drive.google.com/drive/folders/1vkJDvxpiKjyOMGUKWfYHKhNsCQYv0zNs\n\nLooking forward to working with you! 🚀",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Nikhil"
+                    },
+                    "wa_id": "919588779974",
+                    "user_id": "IN.37623883340529161"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "919588779974",
+                    "from_user_id": "IN.37623883340529161",
+                    "id": "wamid.HBgMOTE5NTg4Nzc5OTc0FQIAEhggQTUwNkVCRkIxRUE4NEM0N0U3MTA2MjEwNDI0MzNBOEMA",
+                    "timestamp": "1783781335",
+                    "text": {
+                      "body": "Hi 👋\n\n\nI'm a Professional Video Editor & Thumbnail Designer. I can help you create engaging YouTube videos, Shorts, Reels, travel vlogs, challenge videos, and social media content.\n\n🎬 My Services:\n• Professional Video Editing\n• YouTube Shorts & Reels Editing\n• Motion Graphics\n• Sound Effects & Music Sync\n• Color Correction/Grading\n• High CTR Thumbnail Design\n\n\nPlease share:\n\n1. Your video footage\n2. Reference video (if any)\n3. Editing style you want\n4. Deadline\n\nPortfolio:- https://drive.google.com/drive/folders/1vkJDvxpiKjyOMGUKWfYHKhNsCQYv0zNs\n\nLooking forward to working with you! 🚀"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

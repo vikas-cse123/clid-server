@@ -1,0 +1,41 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1042625644965148",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "918604044556",
+              "phone_number_id": "1237170136146543"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Interscale Marketing"
+                },
+                "wa_id": "918737064453",
+                "user_id": "IN.2611525472597312"
+              }
+            ],
+            "messages": [
+              {
+                "from": "918737064453",
+                "from_user_id": "IN.2611525472597312",
+                "id": "wamid.HBgMOTE4NzM3MDY0NDUzFQIAEhggQTVCNTBFREZCQTFEQjZFRTZGRDI3MEM0QUU5ODNGMzYA",
+                "timestamp": "1783774455",
+                "text": {
+                  "body": "Singapore"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "id": "aab61655-966f-4e37-9c05-9b264c2249a6",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:36:20.759Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "6cb43232-f973-4937-9253-9bf197aa3d17",
+    "contact_id": "2677bc36-1ca0-4340-8d73-febe5a32c2bf",
+    "whatsapp_message_id": "wamid.HBgMOTE2MzcxMzYyMTIxFQIAEhggQUM3QThDMEFBRjMzREEwQUM5QUU4RDc3MzU2RjdFRUIA",
+    "content_type": "text",
+    "text": "Hello, I'm interested in the Video Editor job position.",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Satyabrata Kanungo"
+                    },
+                    "wa_id": "916371362121",
+                    "user_id": "IN.1037052972143184"
+                  }
+                ],
+                "messages": [
+                  {
+                    "referral": {
+                      "source_url": "https://www.instagram.com/p/Dap9FyksyKK/",
+                      "source_id": "120249714229360276",
+                      "source_type": "ad",
+                      "body": "🎬 Hiring Video Editor\n\nLooking for a skilled Video Editor with 2+ years of experience.\n\nMust know:\n• Premiere Pro\n• After Effects\n• Photoshop\n• DaVinci Resolve\n\nFull-Time Role\nImmediate Joining\nCompetitive Salary\n\n📲 Send your portfolio on WhatsApp.",
+                      "headline": "Chat with us",
+                      "media_type": "image",
+                      "image_url": "https://instagram.fbbi5-3.fna.fbcdn.net/v/t45.1600-4/735504423_122115585003125268_3741890208333037724_n.png?stp=c3.41.300.300a_dst-png_p306x306&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=e37a05&_nc_ohc=foAYSByP0s8Q7kNvwGPlQT1&_nc_oc=AdrcBswggadiGFZ2745eI13YbYG7iBLcXY6yTl5JaV4zKpk6-IEL06U1KqW-nYu-kT4z9GQhRgJitkhat-Q3eTcL&_nc_ad=z-m&_nc_cid=2034&_nc_zt=1&_nc_ht=instagram.fbbi5-3.fna&_nc_gid=rDgiDYgrFWJaem4xeDoquA&_nc_ss=7a3ba&oh=00_AQAPvxZgvxFAyydQJs8-B3jY3MpJSkOGCmUAJxiV8NgLsg&oe=6A583C09",
+                      "welcome_message": {
+                        "text": "Hi! Please let us know how we can help you."
+                      }
+                    },
+                    "from": "916371362121",
+                    "from_user_id": "IN.1037052972143184",
+                    "id": "wamid.HBgMOTE2MzcxMzYyMTIxFQIAEhggQUM3QThDMEFBRjMzREEwQUM5QUU4RDc3MzU2RjdFRUIA",
+                    "timestamp": "1783780573",
+                    "text": {
+                      "body": "Hello, I'm interested in the Video Editor job position."
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

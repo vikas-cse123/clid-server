@@ -1,0 +1,41 @@
+{
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1042625644965148",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "918604044556",
+              "phone_number_id": "1237170136146543"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "Mikey"
+                },
+                "wa_id": "919411547145",
+                "user_id": "IN.2139322970126786"
+              }
+            ],
+            "messages": [
+              {
+                "from": "919411547145",
+                "from_user_id": "IN.2139322970126786",
+                "id": "wamid.HBgMOTE5NDExNTQ3MTQ1FQIAEhggQUNDRTAyNzJFRDZBRTczNUU3NEU0OTFEOURFQzdBNjYA",
+                "timestamp": "1783780566",
+                "text": {
+                  "body": "https://youtube.com/shorts/6DtifHqe3y8?si=po6K9tvJ-MOIBjYn"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}

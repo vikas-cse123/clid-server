@@ -1,0 +1,54 @@
+{
+  "id": "f2c1879e-a4d7-4b1b-9777-c2074432f8fe",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:42:30.910Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "3ab0e2b4-75fe-4b12-b7a6-8fb9ec86f3f1",
+    "contact_id": "6f9acc00-fe41-4164-8bf5-297740cdd6a5",
+    "whatsapp_message_id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUMxQjgzMjNGMkY1QkRGNDY1NDZCQzg0RDE1ODY5RUEA",
+    "content_type": "text",
+    "text": "https://www.instagram.com/brightlightproduction?igsh=Zm9xdTNhenlvYTky",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Dixu"
+                    },
+                    "wa_id": "917015773468",
+                    "user_id": "IN.1349971736503641"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "917015773468",
+                    "from_user_id": "IN.1349971736503641",
+                    "id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUMxQjgzMjNGMkY1QkRGNDY1NDZCQzg0RDE1ODY5RUEA",
+                    "timestamp": "1783780947",
+                    "text": {
+                      "body": "https://www.instagram.com/brightlightproduction?igsh=Zm9xdTNhenlvYTky"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

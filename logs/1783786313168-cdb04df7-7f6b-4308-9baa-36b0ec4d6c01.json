@@ -1,0 +1,54 @@
+{
+  "id": "9feb33b6-1b58-4003-bd81-68584878bb37",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T16:11:53.155Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "6cb43232-f973-4937-9253-9bf197aa3d17",
+    "contact_id": "2677bc36-1ca0-4340-8d73-febe5a32c2bf",
+    "whatsapp_message_id": "wamid.HBgMOTE2MzcxMzYyMTIxFQIAEhggQUM5MTAwMkEzQjI3QzgxRjVDMEJBMENFMzRDRTJBNjIA",
+    "content_type": "text",
+    "text": "Bhubaneswar",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Satyabrata Kanungo"
+                    },
+                    "wa_id": "916371362121",
+                    "user_id": "IN.1037052972143184"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "916371362121",
+                    "from_user_id": "IN.1037052972143184",
+                    "id": "wamid.HBgMOTE2MzcxMzYyMTIxFQIAEhggQUM5MTAwMkEzQjI3QzgxRjVDMEJBMENFMzRDRTJBNjIA",
+                    "timestamp": "1783786305",
+                    "text": {
+                      "body": "Bhubaneswar"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

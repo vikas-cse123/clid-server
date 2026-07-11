@@ -1,0 +1,54 @@
+{
+  "id": "4f7eb047-68cf-495f-bfd0-3a8f0cd1845a",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T17:29:45.177Z",
+  "account_id": "c25ed46b-fea7-483d-beef-7b172c671981",
+  "data": {
+    "conversation_id": "4a3ba7c2-ff8a-42e8-8f60-f8c67a6f6465",
+    "contact_id": "0bbe2b3e-3754-4b16-91fe-eea3a3e45f28",
+    "whatsapp_message_id": "wamid.HBgMOTE5ODk5MTg4ODkzFQIAEhggQUM5QTRGNzA0M0M2QzQwMEZFQjJDMjhDODc4RkE2REIA",
+    "content_type": "text",
+    "text": "4 Adults \n2 kids",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1249458963823794",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918929836726",
+                  "phone_number_id": "1180619111803795"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Rahul Chintu Tiwari"
+                    },
+                    "wa_id": "919899188893",
+                    "user_id": "IN.2075800260000287"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "919899188893",
+                    "from_user_id": "IN.2075800260000287",
+                    "id": "wamid.HBgMOTE5ODk5MTg4ODkzFQIAEhggQUM5QTRGNzA0M0M2QzQwMEZFQjJDMjhDODc4RkE2REIA",
+                    "timestamp": "1783790978",
+                    "text": {
+                      "body": "4 Adults \n2 kids"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

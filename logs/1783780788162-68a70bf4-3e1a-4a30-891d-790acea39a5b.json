@@ -1,0 +1,54 @@
+{
+  "id": "d5fb01a8-6769-42c7-935c-b016bdb4da76",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:39:48.158Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "3ab0e2b4-75fe-4b12-b7a6-8fb9ec86f3f1",
+    "contact_id": "6f9acc00-fe41-4164-8bf5-297740cdd6a5",
+    "whatsapp_message_id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUMyRDZBNjQwQkUzRDA5RDVGQTI1QUFGNTA4QkExNkEA",
+    "content_type": "text",
+    "text": "I work in a production house called Brightlight Production and I have been associated with it for about 2 months now.",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Dixu"
+                    },
+                    "wa_id": "917015773468",
+                    "user_id": "IN.1349971736503641"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "917015773468",
+                    "from_user_id": "IN.1349971736503641",
+                    "id": "wamid.HBgMOTE3MDE1NzczNDY4FQIAEhggQUMyRDZBNjQwQkUzRDA5RDVGQTI1QUFGNTA4QkExNkEA",
+                    "timestamp": "1783780783",
+                    "text": {
+                      "body": "I work in a production house called Brightlight Production and I have been associated with it for about 2 months now."
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

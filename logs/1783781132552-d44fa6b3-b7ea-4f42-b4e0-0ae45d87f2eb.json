@@ -1,0 +1,54 @@
+{
+  "id": "da84347f-8799-4dfd-bce1-258abe83348d",
+  "event": "message.received",
+  "occurred_at": "2026-07-11T14:45:32.548Z",
+  "account_id": "719eab51-8dd1-4e45-9096-1b875de1b8b3",
+  "data": {
+    "conversation_id": "bc4d0778-d0e5-49eb-a33e-55febb95753d",
+    "contact_id": "1c8a7bb6-c31a-4cb6-b7fd-4342087e42f0",
+    "whatsapp_message_id": "wamid.HBgMOTE4MjIyMDEyMjgwFQIAEhggQUM4NkI3Nzg3MzJCNTNCQThGMDc3RDhCREIzRTlCNTIA",
+    "content_type": "text",
+    "text": "Personal page\nwww.facebook.com/ratherbox",
+    "raw_payload": {
+      "object": "whatsapp_business_account",
+      "entry": [
+        {
+          "id": "1042625644965148",
+          "changes": [
+            {
+              "value": {
+                "messaging_product": "whatsapp",
+                "metadata": {
+                  "display_phone_number": "918604044556",
+                  "phone_number_id": "1237170136146543"
+                },
+                "contacts": [
+                  {
+                    "profile": {
+                      "name": "Sandeep"
+                    },
+                    "wa_id": "918222012280",
+                    "user_id": "IN.832878236425897"
+                  }
+                ],
+                "messages": [
+                  {
+                    "from": "918222012280",
+                    "from_user_id": "IN.832878236425897",
+                    "id": "wamid.HBgMOTE4MjIyMDEyMjgwFQIAEhggQUM4NkI3Nzg3MzJCNTNCQThGMDc3RDhCREIzRTlCNTIA",
+                    "timestamp": "1783781128",
+                    "text": {
+                      "body": "Personal page\nwww.facebook.com/ratherbox"
+                    },
+                    "type": "text"
+                  }
+                ]
+              },
+              "field": "messages"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
