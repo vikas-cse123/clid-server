@@ -13,6 +13,8 @@ await connectDb();
 app.use('/webhooks/flow', express.raw({ type: 'application/json' }));
 app.use('/whatsapp/webhook', express.json());
 
+// EAAd0fc2AKMQBRyNZAOe2hZC9jZCxbaqTepZCJAheosUPQKhMIZAwaJI2ZBHaMerYM9XhZAWZAMubeArpTMSgw2JX1iManVsvRn5jlWZB2IjokaXIK4kHGZAjVJi1lqF1Ypr4u6ZB3B3VC26YQbNA9ZCotunPZAKl1qMApZCx7CdLOKayJPFRbPwtFRpgjbHHziYdJPhgZCRNgZDZD
+
 app.use((req, res, next) => {
   console.log(`${new Date().toLocaleString()} ${req.method} ${req.originalUrl}`);
 
