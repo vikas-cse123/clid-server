@@ -13,8 +13,10 @@ await connectDb();
 app.use('/webhooks/flow', express.raw({ type: 'application/json' }));
 app.use('/whatsapp/webhook', express.json());
 
-
-
+const META_GRAPH_VERSION = "v25.0";
+const META_DATASET_ID = process.env.META_DATASET_ID;
+const META_WABA_ID = process.env.META_WABA_ID;
+const META_ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
 app.use((req, res, next) => {
   console.log(`${new Date().toLocaleString()} ${req.method} ${req.originalUrl}`);
 
@@ -91,6 +93,113 @@ app.post("/whatsapp/webhook", async (req, res) => {
 
 
 
+function sha256(value) {
+  return crypto
+    .createHash("sha256")
+    .update(String(value).trim().toLowerCase())
+    .digest("hex");
+}
+
+function normalizePhone(phone) {
+  let p = String(phone || "").replace(/\D/g, "");
+
+  // India fallback: 9876543210 => 919876543210
+  if (p.length === 10) {
+    p = `91${p}`;
+  }
+
+  return p;
+}
+
+export async function sendLeadEventToMeta({
+  phone,
+  ctwa_clid,
+  eventName = "LeadSubmitted",
+  eventId,
+  value = 1,
+  leadStage = "qualified_lead",
+}) {
+  if (!META_DATASET_ID) {
+    throw new Error("META_DATASET_ID missing in .env");
+  }
+
+  if (!META_WABA_ID) {
+    throw new Error("META_WABA_ID missing in .env");
+  }
+
+  if (!META_ACCESS_TOKEN) {
+    throw new Error("META_ACCESS_TOKEN missing in .env");
+  }
+
+  if (!phone) {
+    throw new Error("phone missing");
+  }
+
+  if (!ctwa_clid) {
+    throw new Error("ctwa_clid missing");
+  }
+
+  const normalizedPhone = normalizePhone(phone);
+
+  const event = {
+    event_name: eventName,
+    event_time: Math.floor(Date.now() / 1000),
+
+    action_source: "business_messaging",
+    messaging_channel: "whatsapp",
+
+    user_data: {
+      whatsapp_business_account_id: META_WABA_ID,
+
+      // raw, do not hash
+      ctwa_clid,
+
+      // hashed phone
+      ph: sha256(normalizedPhone),
+    },
+
+    custom_data: {
+      currency: "INR",
+      value,
+      lead_stage: leadStage,
+    },
+  };
+
+  // Optional: only send event_id if you pass it
+  if (eventId) {
+    event.event_id = eventId;
+  }
+
+  const payload = {
+    data: [event],
+  };
+
+  console.log("Meta payload:");
+  console.log(JSON.stringify(payload, null, 2));
+  const url = `https://graph.facebook.com/${META_GRAPH_VERSION}/${META_DATASET_ID}/events?access_token=${META_ACCESS_TOKEN}`;
+
+  const response = await fetch(url, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${META_ACCESS_TOKEN}`
+    },
+    body: JSON.stringify(payload),
+  });
+  console.log(response);
+
+  const result = await response.json();
+  console.log(result);
+
+  console.log("Meta response:");
+  console.log(JSON.stringify(result, null, 2));
+
+  if (!response.ok || result.error) {
+    throw new Error(`Meta CAPI error: ${JSON.stringify(result)}`);
+  }
+
+  return {...result,status:response.status};
+}
 
 
 
@@ -102,51 +211,7 @@ const verifySignature = (rawBody, signature, secret) => {
 
   return signature === expected;
 };
-const META_API_VERSION = "v21.0";
-const META_DATASET_ID = 1511299484126649
-const META_ACCESS_TOKEN = "EAAd0fc2AKMQBRyNZAOe2hZC9jZCxbaqTepZCJAheosUPQKhMIZAwaJI2ZBHaMerYM9XhZAWZAMubeArpTMSgw2JX1iManVsvRn5jlWZB2IjokaXIK4kHGZAjVJi1lqF1Ypr4u6ZB3B3VC26YQbNA9ZCotunPZAKl1qMApZCx7CdLOKayJPFRbPwtFRpgjbHHziYdJPhgZCRNgZDZD";
 
-async function sendLeadEventToMeta(ctwaClid) {
-  console.log("function runnning sendLeadEventToMeta");
-  if (!ctwaClid) return;
-  const body = {
-    data: [
-      {
-        event_name: "LeadSubmitted",
-        event_time: Math.floor(Date.now() / 1000),
-        action_source: "business_messaging",
-        messaging_channel: "whatsapp",
-        user_data: { ctwa_clid: ctwaClid },
-      },
-    ],
-  };
-  const res = await fetch(
-    `https://graph.facebook.com/${META_API_VERSION}/${META_DATASET_ID}/events`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${META_ACCESS_TOKEN}`,
-      },
-      body: JSON.stringify(body),
-    }
-  );
-console.log("this is response");
-console.log(res);
- let text;
-if (!res.ok) {
-  text = await res.text();
-  console.log("Meta CAPI error:", res.status, text);
-} else {
-  text = await res.text();
-  console.log("Meta CAPI Lead event sent for", ctwaClid, text);
-}
-
-  // const data = await res.json()
-  // console.log("Interakt ");
-  // console.log(data);
-
-}
 
 
 
@@ -177,6 +242,13 @@ app.post('/webhooks/flow', async (req, res) => {
     console.log("failed to send Meta Lead event", err);
   }
 });
+
+
+
+
+
+
+
 
 app.listen(PORT, () => {
   console.log(`Webhook listener running on port ${PORT}`);
