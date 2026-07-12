@@ -84,13 +84,25 @@ app.post("/whatsapp/webhook", async (req, res) => {
     const businessPhoneNumberId = deepFind(req.body, "phone_number_id");
     const customerName = deepFind(req.body, "name");
 
+      const referral = deepFind(req.body, "referral") || {};
+        const wabaId = deepFind(req.body, "entry")?.[0]?.id;
+        const firstMessage = deepFind(req.body, "text")?.body;
+        const wamid = deepFind(req.body, "messages")?.[0]?.id;
+
     const savedData = await Data.create({
       ctwaClid,
       customerPhoneNumber,
       businessPhoneNumber,
       businessPhoneNumberId,
       name: customerName,
-      isClidSend: false,
+      wabaId,
+      firstMessage,
+      wamid,
+      adId: referral.source_id,
+      adSourceUrl: referral.source_url,
+      adSourceType: referral.source_type,
+      adHeadline: referral.headline,
+      adBody: referral.body,
     });
 
     console.log("saved new clid", savedData._id);
