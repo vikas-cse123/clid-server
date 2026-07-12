@@ -263,11 +263,7 @@ app.post('/webhooks/flow', async (req, res) => {
 
 
 
-sendLeadEventToMeta({
-    phone:917068277745,
-    ctwa_clid:"Afjq0Ny71IJslB5T7mFJ0XmuFpXNCZvlpWkx-xq6FXbQGWpLlquy8LXABvjG6U2JyfLyz4BV8Wmhi3JpM1A18-fzyGov-cR28YTby5Jk5NzjUiiAFujDgeqH6nA7z5zW6ihvbebe0kybTQ",
 
-})
 app.listen(PORT, () => {
   console.log(`Webhook listener running on port ${PORT}`);
 });
