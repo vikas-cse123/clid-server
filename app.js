@@ -248,8 +248,10 @@ app.post('/webhooks/flow', async (req, res) => {
   if (!verifySignature(req.body, signature, WACRM_WEBHOOK_SECRET)) {
     return res.status(401).send('Invalid signature');
   }
-
+console.log("abcdefghijlkldsakdsfkdsafkl");
+  console.log(req.body);
   const event = JSON.parse(req.body);
+  console.log("event");
   console.log(event);
 
   res.status(200).send('ok'); // ack quickly, then process
