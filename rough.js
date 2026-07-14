@@ -1,8 +1,8 @@
 import crypto from "crypto"
-const META_DATASET_ID=4415667522009072
+const META_DATASET_ID=1508641770729611
 const META_GRAPH_VERSION = "v25.0";
 const META_WABA_ID=1249458963823794
-const META_ACCESS_TOKEN="EAAXAUTcboo8BRZC4ZCqPK9ZBoAvFWGyEjZCqk4VFKlGXZCKSfKMvyBEAHJT1FZC3HPi5MSzDoR2DIe0BFcmLzijELB8JITKZBIOdcP98g78TmRN9LYYTepmxp8jwQUZAlPrIxxshCcxaxJHHOAlNmbtoDScT9H355Ih2rDZBCZBPD6ZCyjehLCSTMuDpruv1hzxAqOhkgZDZD"
+const META_ACCESS_TOKEN="EAAXAUTcboo8BR16IBNZCDSkZAFKw6WkZARZCBTZAOxl1whpZCEwOeGpO8qdvbPbaZBHixfu90rI3dh4Y3AYQbZA4TmYtDW70t9xBZB9yFDj00649bOMhBvZCluNTvsN2C8JmRCBmZBuBgmBtNG2VTJMG4z5Os6qU2kLSrxjlrw6lN1HsoE7Mb3RIFEB9ZCuj3da5aSZAUrAZDZD"
 function normalizePhone(phone) {
   let p = String(phone || "").replace(/\D/g, "");
 
@@ -24,7 +24,7 @@ function sha256(value) {
 export async function sendLeadEventToMeta({
   phone,
   ctwa_clid,
-  eventName = "LeadSubmitted",
+  eventName = "Purchase",
   eventId,
   value = 1,
   leadStage = "qualified_lead",
@@ -114,4 +114,11 @@ export async function sendLeadEventToMeta({
 }
 
 
+
+sendLeadEventToMeta({
+  phone:919263028456,
+  ctwa_clid:"Afi7zm5C2tvJwLsobS4hJ9A9RE9RfjSo8e1t5-cY8QyCRO49ZBDHcfYOKpQ12leL3Ta9i-wcBxgjBrB_9Lb8sjsuEkuxpWAvyfYtwxnN_snvwDHooZ5qRzDB2Ilf4c19qp4DpA_5kw",
+  eventId:crypto.randomUUID()
+
+})
 
